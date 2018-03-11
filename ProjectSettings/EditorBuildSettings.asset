@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 17d50894f4914934d85a9c1c6add3d86
+  - enabled: 1
+    path: Assets/Scenes/Soldier.unity
+    guid: 7f0e84c39b286c944a497ef7482c6410
+  - enabled: 1
+    path: Assets/Scenes/General.unity
+    guid: f2f6994deea50514986d1e123cb16fa6
