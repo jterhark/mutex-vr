@@ -230,6 +230,7 @@ MonoBehaviour:
   speed: 25
   rotationSpeed: 90
   force: 700
+  ServerObject: {fileID: 840752980}
 --- !u!1 &840752980
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 840752980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -822479833, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 48186208bef60954cbab63ac1ea485a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
