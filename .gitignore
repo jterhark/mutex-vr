@@ -26,6 +26,9 @@ ExportedObj/
 *.svd
 *.pdb
 
+UnityPlayer.dll
+mutex.exe
+mutex_Data/
 
 # Unity3D generated meta files
 *.pidb.meta
