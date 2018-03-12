@@ -1,0 +1,4 @@
+Schedule and deliverable:
+	Game desing documents
+	Scaling for soldier and general
+	
