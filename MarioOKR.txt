@@ -1,4 +1,5 @@
 Schedule and deliverable:
-	Game desing documents
-	Scaling for soldier and general
+	Game desing documents		(2 hrs)
+	Scaling for soldier and general (1 hr)
+	Animation for soldier		(4 hrs)
 	
