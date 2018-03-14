@@ -26,6 +26,9 @@ ExportedObj/
 *.svd
 *.pdb
 
+Materials.meta
+Prefabs.meta
+
 UnityPlayer.dll
 mutex.exe
 mutex_Data/
