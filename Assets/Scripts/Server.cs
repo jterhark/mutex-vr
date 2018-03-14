@@ -2,19 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using NetworkMessages;
 
 public class Server : NetworkManager {
 
     //im using visual studio 2015 and I LOVE IT
-	public class PositionMessageType{
-		public static short Position = 1024;
-	}
-
-	public class PositionMessage : MessageBase{
-		public float x;
-		public float y;
-		public float z;
-	};
 
 
 	public override void OnServerConnect (NetworkConnection conn)
@@ -23,7 +15,7 @@ public class Server : NetworkManager {
 		Debug.Log ("NEW CONNECTION");
 	}
 
-	public void SendPosition(float x, float y, float z){
+	public void SendPosition(PositionType posType, float x, float y, float z){
 
 		/*
 		Debug.Log ("Connections: " + Network.connections.Length);
@@ -34,12 +26,13 @@ public class Server : NetworkManager {
 		*/
 
 		var msg = new PositionMessage {
-			x = x,
-			y = y,
-			z = z
+			Type = posType,
+			X = x,
+			Y = y,
+			Z = z
 		};
 
-		NetworkServer.SendToAll (PositionMessageType.Position, msg);
+		NetworkServer.SendToAll (MessageTypes.PositionUpdate, msg);
 
 		//this.client.Send (PositionMessageType.Position, msg);
 
