@@ -26,9 +26,15 @@ ExportedObj/
 *.svd
 *.pdb
 
+Materials.meta
+Prefabs.meta
+
 UnityPlayer.dll
 mutex.exe
 mutex_Data/
+.idea/
+Assets/Plugins/
+
 
 # Unity3D generated meta files
 *.pidb.meta
