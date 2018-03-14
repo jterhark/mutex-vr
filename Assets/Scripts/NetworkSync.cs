@@ -7,6 +7,8 @@ public class NetworkSync : MonoBehaviour {
 
     public PositionType Type = PositionType.None;
     public GameObject ServerObject = null;
+    public float Interval = 1.0f;
+    public float StartDelay = 0.1f;
     
     private Transform _t;
     private Server _server;
@@ -15,7 +17,7 @@ public class NetworkSync : MonoBehaviour {
     public void Start() {
         _t = GetComponent<Transform>();
         _server = ServerObject.GetComponent<Server>();
-        this.InvokeRepeating("Send", 0.1f, 1.0f);
+        this.InvokeRepeating("Send", StartDelay, Interval);
 
     }
 
