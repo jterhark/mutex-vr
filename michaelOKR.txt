@@ -1,0 +1,2 @@
+- bomb scripting and score incrementation -- Tuesday 5pm (3 hrs)
+- prototype art for battlefield/war room  -- Monday 10pm (3 hrs)

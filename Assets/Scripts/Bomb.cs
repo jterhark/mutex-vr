@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetworkCapture : MonoBehaviour {
+public class Bomb : MonoBehaviour {
 
-    //test comment
 	// Use this for initialization
 	void Start () {
 		
@@ -12,6 +11,6 @@ public class NetworkCapture : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//test
+		
 	}
 }

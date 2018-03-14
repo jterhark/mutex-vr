@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class Server : NetworkManager {
 
-
+    //im using visual studio 2015 and I LOVE IT
 	public class PositionMessageType{
 		public static short Position = 1024;
 	}
