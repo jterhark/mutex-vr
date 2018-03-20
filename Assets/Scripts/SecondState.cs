@@ -4,6 +4,7 @@ using StateStuff;
 public class SecondState : State<AI>
 {
     private static SecondState _instance;
+    private static int trigger = 0;
 
     private SecondState()
     {
@@ -31,6 +32,7 @@ public class SecondState : State<AI>
     public override void EnterState(AI _owner)
     {
         Debug.Log("Entering Second State");
+        RushAttack.trigger = 1;
     }
 
     public override void ExitState(AI _owner)
@@ -40,9 +42,5 @@ public class SecondState : State<AI>
 
     public override void UpdateState(AI _owner)
     {
-        if (!_owner.switchState)
-        {
-            _owner.stateMachine.ChangeState(FirstState.Instance);
-        }
     }
 }
