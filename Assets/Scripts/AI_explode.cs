@@ -10,7 +10,7 @@ public class AI_explode : MonoBehaviour
     int MaxDist = 10;
     float MinDist = 0.5f ;
 
-
+    public GameObject explosionParticlesPrefab;
 
 
     void Start()
@@ -43,8 +43,15 @@ public class AI_explode : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")){
 
-            Debug.Log("Say");
+            if (explosionParticlesPrefab)
+            {
+                GameObject explosion = (GameObject)Instantiate(explosionParticlesPrefab, transform.position, explosionParticlesPrefab.transform.rotation);
+                Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
+            }
+            
+           // Debug.Log("Say");
             Destroy(gameObject);
+           
         }
     }
 }
