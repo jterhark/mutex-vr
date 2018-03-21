@@ -23,7 +23,7 @@ public class Trig : MonoBehaviour {
             {
                 set = true;
             }
-            else
+            else if(set==true)
             {
                 set = false;
             }
