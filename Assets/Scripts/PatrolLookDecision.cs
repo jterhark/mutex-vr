@@ -16,10 +16,12 @@ public class PatrolLookDecision : Decision {
         Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * 15.0f, Color.green);
         
         if (Physics.SphereCast(controller.eyes.position, 2.0f, controller.eyes.forward, out hit, 15.0f) &&
-            hit.collider.CompareTag("Soldier")) {
+            hit.collider.CompareTag("Player")) {
             controller.target = hit.transform;
             return true;
         }
+        
+        Debug.Log(hit.collider.tag);
 
         return false;
     }

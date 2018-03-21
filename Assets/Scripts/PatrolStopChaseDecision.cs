@@ -15,7 +15,7 @@ public class PatrolStopChaseDecision : Decision {
 		Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * 30.0f, Color.red);
 		
 		if (Physics.SphereCast(controller.eyes.position, 2.0f, controller.eyes.forward, out hit, 30.0f) &&
-		    hit.collider.CompareTag("Soldier")) {
+		    hit.collider.CompareTag("Player")) {
 			slack = Time.time;
 			return false;
 		}
