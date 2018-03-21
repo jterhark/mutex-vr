@@ -11,29 +11,32 @@ public class AI_explode : MonoBehaviour
     float MinDist = 0.5f ;
 
     public GameObject explosionParticlesPrefab;
-
+    Trig set;
 
     void Start()
     {
-
+        set = GameObject.Find("Explotion_Trigger_Room").GetComponent<Trig>();
     }
 
     void Update()
     {
-        transform.LookAt(Player);
-
-        if (Vector3.Distance(transform.position, Player.position) >= MinDist)
+        if (set.set)
         {
+            transform.LookAt(Player);
 
-            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-
-
-
-            if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
+            if (Vector3.Distance(transform.position, Player.position) >= MinDist)
             {
-                //Here Call any function U want Like Shoot at here or something
-            }
 
+                transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+
+
+
+                if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
+                {
+                    //Here Call any function U want Like Shoot at here or something
+                }
+
+            }
         }
 
 
