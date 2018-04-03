@@ -45,4 +45,16 @@ public class CharacterController : MonoBehaviour {
 
         //server.SendPosition(NetworkMessages.PositionType.Soldier, t.position.x, t.position.y, t.position.z);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        float force = 3000;
+        if (collision.gameObject.tag == "explode")
+        {
+            Vector3 dir = collision.contacts[0].point - transform.position;
+            dir = -dir.normalized;
+
+            GetComponent<Rigidbody>().AddForce(dir * force);
+        }
+    }
 }
