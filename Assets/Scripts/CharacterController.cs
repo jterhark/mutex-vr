@@ -48,7 +48,7 @@ public class CharacterController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        float force = 3000;
+        float force = 30000;
         if (collision.gameObject.tag == "explode")
         {
             Vector3 dir = collision.contacts[0].point - transform.position;
