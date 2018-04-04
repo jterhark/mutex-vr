@@ -9,7 +9,7 @@ public class ScoreCount : MonoBehaviour
 
     void Update()
     {
-        int sco = Bomb.score;
+        int sco = Bomb.score+Bomb_disarmed.score;
         scoreDisplay.text = "Score "+sco.ToString();
 
         if (sco >= 5)

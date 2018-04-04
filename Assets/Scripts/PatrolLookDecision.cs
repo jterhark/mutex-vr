@@ -20,8 +20,6 @@ public class PatrolLookDecision : Decision {
             controller.target = hit.transform;
             return true;
         }
-        
-        Debug.Log(hit.collider.tag);
 
         return false;
     }
