@@ -6,6 +6,8 @@ TagManager:
   tags:
   - key
   - Soldier
+  - bullet
+  - secret
   layers:
   - Default
   - TransparentFX
