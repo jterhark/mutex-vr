@@ -17,7 +17,7 @@ public class Secret_bomb : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("gun_bullet"))
         {
 
             if (explosionParticlesPrefab)
