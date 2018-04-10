@@ -15,7 +15,7 @@ public class AI_explode : MonoBehaviour
 
     void Start()
     {
-        set = GameObject.Find("Explotion_Trigger_Room").GetComponent<Trig>();
+        set = GameObject.Find("Exploding_AI_Trig").GetComponent<Trig>();
     }
 
     void Update()
