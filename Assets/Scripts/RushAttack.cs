@@ -15,11 +15,17 @@ public class RushAttack : MonoBehaviour
         Debug.Log("Running Attack Script");
 
     }
+    
+    void OnCollisionEnter()
+    {
+        HealthSystem._curHealh -= 2;
+
+    }
 
     void Update()
     {
-        if (trigger == 1)
-        {
+        //if (trigger == 1)
+        //{
             transform.LookAt(Player);
 
             if (Vector3.Distance(transform.position, Player.position) >= MinDist)
@@ -31,10 +37,9 @@ public class RushAttack : MonoBehaviour
 
                 if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
                 {
-                    //Here Call any function U want Like Shoot at here or something
                 }
 
             }
-        }
+        //}
     }
 }

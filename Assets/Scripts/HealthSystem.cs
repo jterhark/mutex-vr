@@ -16,7 +16,7 @@ public class HealthSystem : MonoBehaviour {
 	[SerializeField]
 	public Transform respawnPoint;
 
-	int _curHealh = 100;
+	public static int _curHealh = 100;
 	int _maxHealth = 100;
 	string _healthtext;
 
