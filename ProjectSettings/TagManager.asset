@@ -8,6 +8,7 @@ TagManager:
   - Soldier
   - bullet
   - secret
+  - gun_bullet
   layers:
   - Default
   - TransparentFX

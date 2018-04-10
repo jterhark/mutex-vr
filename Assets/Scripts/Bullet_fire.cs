@@ -9,7 +9,7 @@ public class Bullet_fire : MonoBehaviour {
     public Transform position;
     
     float start = 0.0f;
-    float finish = 50.0f;
+    float finish = 120.0f;
   //  public Transform bulletSpawn;
 	// Use this for initialization
 	void Start () {
