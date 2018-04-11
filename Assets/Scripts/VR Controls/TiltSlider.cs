@@ -26,5 +26,16 @@ public class TiltSlider : MonoBehaviour {
         var value = args.value;
         Textmesh.text = "Tilt: " + args.normalizedValue.ToString() + "%";
         Map.rotation = Quaternion.Euler(Map.rotation.x, Map.rotation.y, Map.rotation.z + ((float) value));
+
+//        if (SteamVR.instance != null && SteamVR.instance.overlay != null) {
+//            SteamVR.instance.overlay.ShowKeyboard(
+//                eInputMode: 0,
+//                eLineInputMode: 0,
+//                pchDescription: "IP",
+//                unCharMax: 256,
+//                pchExistingText: "",
+//                bUseMinimalMode: true,
+//                uUserValue: 0);
+//        }
     }
 }
