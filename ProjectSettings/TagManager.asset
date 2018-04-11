@@ -6,6 +6,9 @@ TagManager:
   tags:
   - key
   - Soldier
+  - bullet
+  - secret
+  - gun_bullet
   layers:
   - Default
   - TransparentFX

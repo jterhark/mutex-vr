@@ -8,7 +8,12 @@ public class Server : NetworkManager {
     //im using visual studio 2015 and I LOVE IT
 
     public GameObject PlayerLocationIcon;
-    public float ScalingFactor = 1.0f;
+    public float ScalingFactor = 100.0f;
+    public Transform Map;
+    public Material PlayerIconMaterial;
+    public Material EnemyIconMaterial;
+    public Material BombIconMaterial;
+    public Material DefaultMaterial;
 
 
     public override void OnServerConnect(NetworkConnection conn) {
@@ -21,9 +26,34 @@ public class Server : NetworkManager {
         var pos = msg.ReadMessage<PositionMessage>();
         Debug.Log(string.Format("type = {0} | x = {1} | y = {2} | z = {3}", pos.Type, pos.X, pos.Y, pos.Z));
 
-        var obj = Instantiate(PlayerLocationIcon,
-                              new Vector3(pos.X / ScalingFactor, pos.Y / ScalingFactor, pos.Z / ScalingFactor),
-                              Quaternion.Euler(0, 0, 0));
+        var obj = Instantiate(PlayerLocationIcon) as GameObject;
+        obj.transform.parent = Map;
+        obj.transform.localPosition = new Vector3(
+            (pos.X),
+            (pos.Y),
+            (pos.Z)
+        );
+        obj.transform.rotation = new Quaternion(0, 0, 0, 0);
+
+        Renderer renderer = obj.GetComponent<Renderer>();
+        
+        switch (pos.Type) {
+            case PositionType.Soldier:
+                renderer.material = PlayerIconMaterial;
+                break;
+            case PositionType.Enemy:
+                renderer.material = EnemyIconMaterial;
+                break;
+            case PositionType.Bomb:
+                renderer.material = BombIconMaterial;
+                break;
+            case PositionType.None:
+            default:
+                renderer.material = DefaultMaterial;
+                break;
+        }
+
+        //obj.transform.rotation = Map.rotation;
         Object.Destroy(obj, 1.0f);
     }
 

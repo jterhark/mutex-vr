@@ -5,7 +5,7 @@ namespace NetworkMessages {
         public const short PositionUpdate = 1024;
     }
     
-    public enum PositionType{None = 0, Soldier = 1, Enemy = 2}
+    public enum PositionType{None = 0, Soldier = 1, Enemy = 2, Bomb = 3}
     
     public class PositionMessage : MessageBase {
         public PositionType Type;

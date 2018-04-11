@@ -1,4 +1,6 @@
-﻿namespace StateStuff
+﻿using System;
+
+namespace StateStuff
 {
     public class StateMachine<T>
     {
@@ -17,6 +19,11 @@
                 currentState.ExitState(Owner);
             currentState = _newstate;
             currentState.EnterState(Owner);
+        }
+
+        internal void ChangeState(FirstState instance)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update()
