@@ -11,10 +11,11 @@ public class RushTrigger : MonoBehaviour {
 
     }
 
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision col)
     {
         attackFlag = 1;
         Debug.Log("RushTrigger Triggered");
+        Destroy(gameObject);
 
     }
 

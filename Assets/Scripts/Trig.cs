@@ -29,7 +29,7 @@ public class Trig : MonoBehaviour {
             }
             
           //  Debug.Log(set);
-           // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
