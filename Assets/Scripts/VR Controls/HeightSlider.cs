@@ -24,6 +24,6 @@ public class HeightSlider : MonoBehaviour {
 	private void SliderHandler(object sender, Control3DEventArgs args) {
 		var value = args.value;
 		Textmesh.text = "Height: " + args.normalizedValue.ToString() + "%";
-		Map.position = new Vector3(Map.position.x, ((float) value)/50.0f, Map.position.z);
+		Map.position = new Vector3(Map.position.x, 1.0f + ((float) value)/50.0f, Map.position.z);
 	}
 }
