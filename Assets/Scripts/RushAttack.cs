@@ -6,8 +6,8 @@ public class RushAttack : MonoBehaviour
 {
     public Transform Player;
     int MoveSpeed = 4;
-    int MaxDist = 10;
-    int MinDist = 1;
+    int MaxDist = 20;
+    int MinDist = 10;
     public static int trigger;
 
     void Start()
@@ -32,8 +32,6 @@ public class RushAttack : MonoBehaviour
             {
 
                 transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-
-
 
                 if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
                 {

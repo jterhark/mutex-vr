@@ -231,6 +231,48 @@ ModelImporter:
     4300078: CSS_Arms_OBJ_Smoothed_:UA
     4300080: CSS_Arms_OBJ_Smoothed_:H2
     4300082: CSS_Arms_OBJ_Smoothed_:H1
+    6400000: CSS_Arms_OBJ_Smoothed_:F1a
+    6400002: CSS_Arms_OBJ_Smoothed_:F1b
+    6400004: CSS_Arms_OBJ_Smoothed_:F2a
+    6400006: CSS_Arms_OBJ_Smoothed_:F2b
+    6400008: CSS_Arms_OBJ_Smoothed_:F2c
+    6400010: CSS_Arms_OBJ_Smoothed_:F3a
+    6400012: CSS_Arms_OBJ_Smoothed_:F3b
+    6400014: CSS_Arms_OBJ_Smoothed_:F3c
+    6400016: CSS_Arms_OBJ_Smoothed_:F4a
+    6400018: CSS_Arms_OBJ_Smoothed_:F4b
+    6400020: CSS_Arms_OBJ_Smoothed_:F4c
+    6400022: CSS_Arms_OBJ_Smoothed_:F5a
+    6400024: CSS_Arms_OBJ_Smoothed_:F5b
+    6400026: CSS_Arms_OBJ_Smoothed_:F5c
+    6400028: CSS_Arms_OBJ_Smoothed_:H1
+    6400030: CSS_Arms_OBJ_Smoothed_:H2
+    6400032: CSS_Arms_OBJ_Smoothed_:UA
+    6400034: pasted__pasted__pCylinder1
+    6400036: pasted__pasted__pPlane5
+    6400038: pasted__pCylinder1
+    6400040: pasted__pCylinder1 1
+    6400042: pasted__pCylinder2
+    6400044: pasted__pPlane5
+    6400046: pasted__pPlane5 1
+    6400048: pasted__pPlane7
+    6400050: pCylinder1
+    6400052: pCylinder2
+    6400054: pCylinder3
+    6400056: pPipe1
+    6400058: pPipe2
+    6400060: pPipe3
+    6400062: pPlane1
+    6400064: pPlane10
+    6400066: pPlane2
+    6400068: pPlane3
+    6400070: pPlane4
+    6400072: pPlane5
+    6400074: pPlane6
+    6400076: pPlane7
+    6400078: pPlane8
+    6400080: pPlane9
+    6400082: pSphere1
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -264,7 +306,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -284,7 +326,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
