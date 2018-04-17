@@ -6,8 +6,8 @@ public class RushAttack : MonoBehaviour
 {
     public Transform Player;
     int MoveSpeed = 4;
-    int MaxDist = 20;
-    int MinDist = 10;
+    int MaxDist = 50;
+    int MinDist = 25;
     public static int trigger;
 
     void Start()
