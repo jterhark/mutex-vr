@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 64229274696114494}
   - component: {fileID: 64866761586412714}
   - component: {fileID: 64540042233653272}
+  - component: {fileID: 64308721197902268}
   m_Layer: 0
   m_Name: banner
   m_TagString: Untagged
@@ -76,6 +77,20 @@ MeshCollider:
 --- !u!64 &64229274696114494
 MeshCollider:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552523629552458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64308721197902268
+MeshCollider:
+  m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552523629552458}

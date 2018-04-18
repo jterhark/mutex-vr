@@ -26,6 +26,7 @@ public class TiltSlider : MonoBehaviour {
         var value = args.value;
         Textmesh.text = "Tilt: " + args.normalizedValue.ToString() + "%";
         Map.rotation = Quaternion.Euler(Map.rotation.x, Map.rotation.y, Map.rotation.z + ((float) value));
+        Debug.Log("Update: " + Map.rotation.ToString());
 
 //        if (SteamVR.instance != null && SteamVR.instance.overlay != null) {
 //            SteamVR.instance.overlay.ShowKeyboard(
