@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 - Soldier.unity
     guid: f0a9b66ac121cbf4cb71addb9307f3a0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 23b470a5e78e19b4cb34c5c9227e1692
