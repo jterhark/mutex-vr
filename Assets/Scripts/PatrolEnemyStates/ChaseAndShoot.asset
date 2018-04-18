@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477a20a59d6346546ba6849190d38fbb, type: 3}
   m_Name: ChaseAndShoot
   m_EditorClassIdentifier: 
-  actions: []
-  Transitions: []
+  actions:
+  - {fileID: 11400000, guid: 2576038112f06794dac01739c4edc38e, type: 2}
+  Transitions:
+  - decision: {fileID: 11400000, guid: c8abb6d646132c34cbf8f94714710960, type: 2}
+    trueState: {fileID: 11400000, guid: 0335b32a538d24343ad2db00a61eed7e, type: 2}
+    falseState: {fileID: 11400000, guid: b50a4ec1052aa5049a47b89656b3d186, type: 2}
   GizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
