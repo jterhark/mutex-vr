@@ -9,6 +9,8 @@ public class StateController : MonoBehaviour {
     public Transform eyes;
     public Transform[] patrolPoints;
     public State remainState;
+    public GameObject BulletPrefab;
+    public Transform BulletSpawnPoint;
     
     [HideInInspector] public Transform target;
     [HideInInspector] public int nextPatrolPoint;
