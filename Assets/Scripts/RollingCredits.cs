@@ -27,7 +27,7 @@ Soldier - Megha Patel
 
 
 FRAMEWORKS
-<size=25>VRTK -Virtual Reality Toolkit</size>
+<size=25>VRTK - Virtual Reality Toolkit</size>
 <size=20>https://assetstore.unity.com/packages/tools/vrtk-virtual-reality-toolkit-vr-toolkit-64131</size>
 
 <size=25>Unity Standard Assets</size>
@@ -35,6 +35,9 @@ FRAMEWORKS
 
 
 SOUNDS
+<size=25>Light Years Away | Doug Maxwell<size>
+<size=20>https://www.youtube.com/audiolibrary/music</size>
+
 
 
 SCRIPTS
