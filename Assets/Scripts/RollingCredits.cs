@@ -18,65 +18,67 @@ Jake TerHark
 
 
 TEXTURES/MATERIALS
-<size=25>Yughues Free Ground Materials</size>
-<size=20>https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001</size>
+Yughues Free Ground Materials
+https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001
 
-<size=25>Particle System - Julien Tonsuso(Unity Asset Store) / Moonflower Carnivore</size>
-<size=25>Tank Texture-(Shader script)</size>
-<size=20>https://www.dreamstime.com/stock-photo-texture-green-military-tank-s-side-details-close-up-image53502107</size>
+Particle System - Julien Tonsuso(Unity Asset Store) / Moonflower Carnivore
 
+Tank Texture-(Shader script)
+https://www.dreamstime.com/stock-photo-texture-green-military-tank-s-side-details-close-up-image53502107
 
 
 MODELS
 Soldier - Megha Patel
-<size=25>Gun</size>
-<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/704434</size>
-<size=25>Bullets</size>
-<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/746341</size>
-<size=25>Houses</size>
-<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/1163597</size>
-<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/848227</size>
-<size=25>Tank</size>
-<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/624246</size>
-<size=25>Bomb - Mario</size>
 
+Gun
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/704434
+
+Bullets
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/746341
+
+Houses
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/1163597
+
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/848227
+Tank
+
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/624246
+Bomb - Mario
 
 
 FRAMEWORKS
-<size=25>VRTK - Virtual Reality Toolkit</size>
-<size=20>https://assetstore.unity.com/packages/tools/vrtk-virtual-reality-toolkit-vr-toolkit-64131</size>
+VRTK - Virtual Reality Toolkit
+https://assetstore.unity.com/packages/tools/vrtk-virtual-reality-toolkit-vr-toolkit-64131
 
-<size=25>Unity Standard Assets</size>
-<size=20>https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351</size>
+Unity Standard Assets
+https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351
 
 
 SOUNDS
-<size=25>Light Years Away | Doug Maxwell<size>
-<size=20>https://www.youtube.com/audiolibrary/music</size>
-
+Light Years Away | Doug Maxwell<size>
+https://www.youtube.com/audiolibrary/music
 
 
 SCRIPTS
-<size=25>Mesh Terrain Editor Free</size>
-<size=20>https://assetstore.unity.com/packages/tools/terrain/mesh-terrain-editor-free-67758</size>
+Mesh Terrain Editor Free
+https://assetstore.unity.com/packages/tools/terrain/mesh-terrain-editor-free-67758
 
-<size=25>Compass</size>
-<size=20>http://aarlangdi.blogspot.com.au/2015/11/creating-compass-in-unity-3d-1-video.html</size>
-
+Compass
+http://aarlangdi.blogspot.com.au/2015/11/creating-compass-in-unity-3d-1-video.html
 
 
 SHADERS
-<size=25>Hologram Shader</size>
-<size=20>https://github.com/andydbc/HologramShader</size>
-
-
+Hologram Shader
+https://github.com/andydbc/HologramShader
 ";
 
     // Use this for initialization
     void Start() {
         if (Math.Abs(View.width) < 0.00001) {
-            this.View = new Rect(0.0f, 0.0f, Screen.width - 100, Screen.height);
+            this.View = new Rect(0.0f, 0.0f, Screen.width, Screen.height);
         }
+
+        Style.richText = true;
 
         this._offset = this.View.height;
         _height = Style.CalcSize(new GUIContent(text)).y;
@@ -95,7 +97,7 @@ SHADERS
         GUI.BeginGroup(this.View);
 
         var position = new Rect(0, this._offset, this.View.width, this.View.height);
-
+        
 
         GUI.Label(position, text, Style);
         GUI.EndGroup();
