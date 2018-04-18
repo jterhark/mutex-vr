@@ -55,8 +55,11 @@ public class HealthSystem : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision col) { 
 		if (col.gameObject.tag == "bullet"){ 
+			_curHealh -= 20;
+		} 
+		
+		if (col.gameObject.tag == "bullet_pre"){ 
 			_curHealh -= 10;
-			//Destroy(col.other);
 		} 
 	} 
 
