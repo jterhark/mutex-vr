@@ -6,8 +6,8 @@ public class RushAttack : MonoBehaviour
 {
     public Transform Player;
     int MoveSpeed = 4;
-    int MaxDist = 50;
-    int MinDist = 25;
+    int MaxDist = 25;
+    int MinDist = 0;
     public static int trigger;
 
     void Start()
@@ -24,8 +24,8 @@ public class RushAttack : MonoBehaviour
 
     void Update()
     {
-        //if (trigger == 1)
-        //{
+        if (trigger == 1)
+        {
             transform.LookAt(Player);
 
             if (Vector3.Distance(transform.position, Player.position) >= MinDist)
@@ -38,6 +38,7 @@ public class RushAttack : MonoBehaviour
                 }
 
             }
-        //}
+        }
+      trigger= RushTrigger.attackFlag;
     }
 }

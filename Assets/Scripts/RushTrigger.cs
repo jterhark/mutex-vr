@@ -13,9 +13,14 @@ public class RushTrigger : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        attackFlag = 1;
-        Debug.Log("RushTrigger Triggered");
-        Destroy(gameObject);
+        if (col.gameObject.CompareTag("Player"))
+        {
+            attackFlag = 1;
+            Debug.Log("RushTrigger Triggered");
+            Destroy(gameObject);
+        }
+
+
 
     }
 
