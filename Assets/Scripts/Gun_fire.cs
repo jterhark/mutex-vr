@@ -7,11 +7,16 @@ public class Gun_fire : MonoBehaviour {
     public GameObject bulletP;
     public Transform position;
 
+   // float vol = 1.5f;
+   
+
     // Use this for initialization
     void Start()
     {
-    
+        
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -19,7 +24,9 @@ public class Gun_fire : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Fire();
+
+          
+              Fire();
         }
 
     }
