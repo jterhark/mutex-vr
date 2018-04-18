@@ -44,6 +44,17 @@ public class Sniper : MonoBehaviour {
         if (onRange)
             transform.LookAt(player);
     }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("gun_bullet"))
+        {
+            
+            // Debug.Log("Say");
+            Destroy(gameObject);
+           
+        }
+    }
 
 
 }
