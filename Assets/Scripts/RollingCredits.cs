@@ -12,9 +12,9 @@ public class RollingCredits : MonoBehaviour {
 
     private const string text = @"MUTEX GAME
 
-Jake TerHark
 Mario Betancourt
 Michael Koutsostamatis
+Jake TerHark
 
 
 TEXTURES/MATERIALS
@@ -42,15 +42,11 @@ SCRIPTS
 <size=20>https://assetstore.unity.com/packages/tools/terrain/mesh-terrain-editor-free-67758</size>
 
 
+SHADERS
+<size=25>Hologram Shader</size>
+<size=20>https://github.com/andydbc/HologramShader</size>
 
 
-
-
-
-
-
-
-Test
 ";
 
     // Use this for initialization
