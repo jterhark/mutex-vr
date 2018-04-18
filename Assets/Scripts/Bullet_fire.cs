@@ -12,11 +12,18 @@ public class Bullet_fire : MonoBehaviour {
     
     float start = 0.0f;
     float finish = 50.0f;
-  //  public Transform bulletSpawn;
+    
+    // public Transform bulletSpawn;
 	// Use this for initialization
 	void Start () {
-        range = 30.0f;
+        range = 50.0f;
 	}
+    
+    void OnCollisionEnter()
+    {
+        HealthSystem._curHealh -= 20;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -26,7 +33,7 @@ public class Bullet_fire : MonoBehaviour {
             {
                 var fire = (GameObject)Instantiate(bullet, position.position, position.rotation);
 
-                fire.GetComponent<Rigidbody>().velocity = fire.transform.forward * 6;
+                fire.GetComponent<Rigidbody>().velocity = fire.transform.forward * 10;
                 Destroy(fire, 5.0f);
                 //Debug.Log("here");
                 start++;
@@ -41,6 +48,7 @@ public class Bullet_fire : MonoBehaviour {
                 start++;
                 // Debug.Log("sum");
             }
+            
         }
       
 	}
