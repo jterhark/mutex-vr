@@ -21,9 +21,25 @@ TEXTURES/MATERIALS
 <size=25>Yughues Free Ground Materials</size>
 <size=20>https://assetstore.unity.com/packages/2d/textures-materials/floors/yughues-free-ground-materials-13001</size>
 
+<size=25>Particle System - Julien Tonsuso(Unity Asset Store) / Moonflower Carnivore</size>
+<size=25>Tank Texture-(Shader script)</size>
+<size=20>https://www.dreamstime.com/stock-photo-texture-green-military-tank-s-side-details-close-up-image53502107</size>
+
+
 
 MODELS
 Soldier - Megha Patel
+<size=25>Gun</size>
+<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/704434</size>
+<size=25>Bullets</size>
+<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/746341</size>
+<size=25>Houses</size>
+<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/1163597</size>
+<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/848227</size>
+<size=25>Tank</size>
+<size=20>https://www.turbosquid.com/FullPreview/Index.cfm/ID/624246</size>
+<size=25>Bomb - Mario</size>
+
 
 
 FRAMEWORKS
@@ -43,6 +59,10 @@ SOUNDS
 SCRIPTS
 <size=25>Mesh Terrain Editor Free</size>
 <size=20>https://assetstore.unity.com/packages/tools/terrain/mesh-terrain-editor-free-67758</size>
+
+<size=25>Compass</size>
+<size=20>http://aarlangdi.blogspot.com.au/2015/11/creating-compass-in-unity-3d-1-video.html</size>
+
 
 
 SHADERS
