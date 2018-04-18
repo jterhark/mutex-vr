@@ -11,7 +11,7 @@ public class AI_explode : MonoBehaviour
     float MinDist = 0.5f ;
     public float range;
     public Transform player;
-   
+    public AudioSource audioSource;
 
     public GameObject explosionParticlesPrefab;
     Trig set;
@@ -20,6 +20,8 @@ public class AI_explode : MonoBehaviour
     {
       //  set = GameObject.Find("Exploding_AI_Trig").GetComponent<Trig>();
         range = 20;
+        //audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -48,7 +50,11 @@ public class AI_explode : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            HealthSystem._curHealh -= 30;
+            audioSource.Play();
 
             if (explosionParticlesPrefab)
             {

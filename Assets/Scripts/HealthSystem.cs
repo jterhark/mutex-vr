@@ -16,7 +16,7 @@ public class HealthSystem : MonoBehaviour {
 	[SerializeField]
 	public Transform respawnPoint;
 
-	public static int _curHealh = 100;
+	public static int _curHealh = 112;
 	int _maxHealth = 100;
 	string _healthtext;
 
@@ -52,5 +52,12 @@ public class HealthSystem : MonoBehaviour {
 
 	scoreDisplay.text = _healthtext;
 	}
+	
+	void OnCollisionEnter(Collision col) { 
+		if (col.gameObject.tag == "bullet"){ 
+			_curHealh -= 10;
+			//Destroy(col.other);
+		} 
+	} 
 
 }
