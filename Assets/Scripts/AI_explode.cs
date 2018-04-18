@@ -9,18 +9,22 @@ public class AI_explode : MonoBehaviour
     int MoveSpeed = 4;
     int MaxDist = 10;
     float MinDist = 0.5f ;
+    public float range;
+    public Transform player;
+   
 
     public GameObject explosionParticlesPrefab;
     Trig set;
 
     void Start()
     {
-        set = GameObject.Find("Exploding_AI_Trig").GetComponent<Trig>();
+      //  set = GameObject.Find("Exploding_AI_Trig").GetComponent<Trig>();
+        range = 20;
     }
 
     void Update()
     {
-        if (set.set)
+        if ((Vector3.Distance(player.position, transform.position) <= range))
         {
             transform.LookAt(Player);
 
