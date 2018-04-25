@@ -19,12 +19,16 @@ public class HealthSystem : MonoBehaviour {
 	public static int _curHealh = 112;
 	int _maxHealth = 100;
 	string _healthtext;
-
-	void Start ()
+    Animator anim;
+    void Start ()
 	{	
 	}
-
-	void Update()
+    void Awake()
+    {
+        // Set up the reference.
+        anim = GetComponent<Animator>();
+    }
+    void Update()
 	{
 		_healthtext = _curHealh.ToString() + " / " + _maxHealth.ToString();
 
@@ -46,11 +50,21 @@ public class HealthSystem : MonoBehaviour {
 
 		if (_curHealh == 0)
 		{
-			player.transform.position = respawnPoint.transform.position;
-			_curHealh = 100;
-		}
+            anim.SetTrigger("Gameover");
 
-	scoreDisplay.text = _healthtext;
+
+        }
+        if (Input.GetKeyDown("p"))
+        {
+            player.transform.position = respawnPoint.transform.position;
+            _curHealh = 100;
+            anim.SetTrigger("Continue");
+            anim.ResetTrigger("Gameover");
+           
+        }
+
+
+        scoreDisplay.text = _healthtext;
 	}
 	
 	void OnCollisionEnter(Collision col) { 
