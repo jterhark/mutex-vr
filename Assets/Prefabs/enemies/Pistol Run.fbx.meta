@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: f7d54cbf04c4be441974d68a76f21d68
+timeCreated: 1524959234
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: MixamoSoldier8k_TurboSquid_001_2010
+    100002: //RootNode
+    100004: soldier:Head
+    100006: soldier:HeadTop_End
+    100008: soldier:Hips
+    100010: soldier:LeftArm
+    100012: soldier:LeftFoot
+    100014: soldier:LeftFootToeBase_End
+    100016: soldier:LeftForeArm
+    100018: soldier:LeftHand
+    100020: soldier:LeftHandIndex1
+    100022: soldier:LeftHandIndex2
+    100024: soldier:LeftHandIndex3
+    100026: soldier:LeftHandIndex4
+    100028: soldier:LeftHandMiddle1
+    100030: soldier:LeftHandMiddle2
+    100032: soldier:LeftHandMiddle3
+    100034: soldier:LeftHandMiddle4
+    100036: soldier:LeftHandPinky1
+    100038: soldier:LeftHandPinky2
+    100040: soldier:LeftHandPinky3
+    100042: soldier:LeftHandPinky4
+    100044: soldier:LeftHandRing1
+    100046: soldier:LeftHandRing2
+    100048: soldier:LeftHandRing3
+    100050: soldier:LeftHandRing4
+    100052: soldier:LeftHandThumb1
+    100054: soldier:LeftHandThumb2
+    100056: soldier:LeftHandThumb3
+    100058: soldier:LeftHandThumb4
+    100060: soldier:LeftLeg
+    100062: soldier:LeftShoulder
+    100064: soldier:LeftToeBase
+    100066: soldier:LeftUpLeg
+    100068: soldier:Neck
+    100070: soldier:Neck1
+    100072: soldier:RightArm
+    100074: soldier:RightFoot
+    100076: soldier:RightFootToeBase_End
+    100078: soldier:RightForeArm
+    100080: soldier:RightHand
+    100082: soldier:RightHandIndex1
+    100084: soldier:RightHandIndex2
+    100086: soldier:RightHandIndex3
+    100088: soldier:RightHandIndex4
+    100090: soldier:RightHandMiddle1
+    100092: soldier:RightHandMiddle2
+    100094: soldier:RightHandMiddle3
+    100096: soldier:RightHandMiddle4
+    100098: soldier:RightHandPinky1
+    100100: soldier:RightHandPinky2
+    100102: soldier:RightHandPinky3
+    100104: soldier:RightHandPinky4
+    100106: soldier:RightHandRing1
+    100108: soldier:RightHandRing2
+    100110: soldier:RightHandRing3
+    100112: soldier:RightHandRing4
+    100114: soldier:RightHandThumb1
+    100116: soldier:RightHandThumb2
+    100118: soldier:RightHandThumb3
+    100120: soldier:RightHandThumb4
+    100122: soldier:RightLeg
+    100124: soldier:RightShoulder
+    100126: soldier:RightToeBase
+    100128: soldier:RightUpLeg
+    100130: soldier:Spine
+    100132: soldier:Spine1
+    100134: soldier:Spine2
+    400000: MixamoSoldier8k_TurboSquid_001_2010
+    400002: //RootNode
+    400004: soldier:Head
+    400006: soldier:HeadTop_End
+    400008: soldier:Hips
+    400010: soldier:LeftArm
+    400012: soldier:LeftFoot
+    400014: soldier:LeftFootToeBase_End
+    400016: soldier:LeftForeArm
+    400018: soldier:LeftHand
+    400020: soldier:LeftHandIndex1
+    400022: soldier:LeftHandIndex2
+    400024: soldier:LeftHandIndex3
+    400026: soldier:LeftHandIndex4
+    400028: soldier:LeftHandMiddle1
+    400030: soldier:LeftHandMiddle2
+    400032: soldier:LeftHandMiddle3
+    400034: soldier:LeftHandMiddle4
+    400036: soldier:LeftHandPinky1
+    400038: soldier:LeftHandPinky2
+    400040: soldier:LeftHandPinky3
+    400042: soldier:LeftHandPinky4
+    400044: soldier:LeftHandRing1
+    400046: soldier:LeftHandRing2
+    400048: soldier:LeftHandRing3
+    400050: soldier:LeftHandRing4
+    400052: soldier:LeftHandThumb1
+    400054: soldier:LeftHandThumb2
+    400056: soldier:LeftHandThumb3
+    400058: soldier:LeftHandThumb4
+    400060: soldier:LeftLeg
+    400062: soldier:LeftShoulder
+    400064: soldier:LeftToeBase
+    400066: soldier:LeftUpLeg
+    400068: soldier:Neck
+    400070: soldier:Neck1
+    400072: soldier:RightArm
+    400074: soldier:RightFoot
+    400076: soldier:RightFootToeBase_End
+    400078: soldier:RightForeArm
+    400080: soldier:RightHand
+    400082: soldier:RightHandIndex1
+    400084: soldier:RightHandIndex2
+    400086: soldier:RightHandIndex3
+    400088: soldier:RightHandIndex4
+    400090: soldier:RightHandMiddle1
+    400092: soldier:RightHandMiddle2
+    400094: soldier:RightHandMiddle3
+    400096: soldier:RightHandMiddle4
+    400098: soldier:RightHandPinky1
+    400100: soldier:RightHandPinky2
+    400102: soldier:RightHandPinky3
+    400104: soldier:RightHandPinky4
+    400106: soldier:RightHandRing1
+    400108: soldier:RightHandRing2
+    400110: soldier:RightHandRing3
+    400112: soldier:RightHandRing4
+    400114: soldier:RightHandThumb1
+    400116: soldier:RightHandThumb2
+    400118: soldier:RightHandThumb3
+    400120: soldier:RightHandThumb4
+    400122: soldier:RightLeg
+    400124: soldier:RightShoulder
+    400126: soldier:RightToeBase
+    400128: soldier:RightUpLeg
+    400130: soldier:Spine
+    400132: soldier:Spine1
+    400134: soldier:Spine2
+    7400000: mixamo.com
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

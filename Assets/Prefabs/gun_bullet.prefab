@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 4205522983874002}
   - component: {fileID: 54081519255206674}
   - component: {fileID: 136899590051895278}
+  - component: {fileID: 114809857733471442}
   m_Layer: 0
   m_Name: gun_bullet
   m_TagString: gun_bullet
@@ -163,6 +164,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114809857733471442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478401948976192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981a59500e308a64cb3964b8e65083aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136899590051895278
 CapsuleCollider:
   m_ObjectHideFlags: 1
