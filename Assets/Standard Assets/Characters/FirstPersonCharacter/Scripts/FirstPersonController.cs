@@ -139,6 +139,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource.clip = m_JumpSound;
             m_AudioSource.Play();
         }
+        
+        
+        private void OnCollisionEnter(Collision collision)
+        {
+            float force = 30000;
+            if (collision.gameObject.tag == "explode")
+            {
+                Vector3 dir = collision.contacts[0].point - transform.position;
+                dir = -dir.normalized;
+
+                GetComponent<Rigidbody>().AddForce(dir * force);
+            }
+        }
 
 
         private void ProgressStepCycle(float speed)

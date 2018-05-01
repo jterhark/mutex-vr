@@ -12,7 +12,7 @@ public class ScoreCount : MonoBehaviour
         int sco = Bomb.score+Bomb_disarmed.score;
         scoreDisplay.text = "Score "+sco.ToString();
 
-        if (sco >= 5)
+        if (sco >= 4)
         {
             scoreDisplay.text = "You Win!";
         }

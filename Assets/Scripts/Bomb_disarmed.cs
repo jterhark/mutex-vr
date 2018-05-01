@@ -8,6 +8,8 @@ public class Bomb_disarmed : MonoBehaviour {
     public GameObject explosionParticlesPrefab;
     void OnCollisionEnter(Collision collision)
     {
+        
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Player"))
         {
 
