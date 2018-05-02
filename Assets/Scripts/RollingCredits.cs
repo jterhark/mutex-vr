@@ -12,10 +12,36 @@ public class RollingCredits : MonoBehaviour {
 
     private const string text = @"MUTEX GAME
 
-Mario Betancourt
-Michael Koutsostamatis
-Jake TerHark
+---Mario Betancourt---
+Level Design
+Animation
+Asset Finder
+Expode AI
+Bomb Model
+Score System
 
+
+---Michael Koutsostamatis---
+Health and Respawn System
+Projectile Models
+Chase AI
+Animation
+Soldier Sound Integration
+
+
+---Jake TerHark---
+Networking
+Tank AI
+First Person Camera
+Terrain to Mesh
+Vive Integration
+Vive Models
+Vive Controls
+Hologram Shader Integration
+
+
+
+---Assets---
 
 TEXTURES/MATERIALS
 Yughues Free Ground Materials
