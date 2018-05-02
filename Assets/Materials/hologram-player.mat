@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Branches_1
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH_DETAIL
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 1
+  m_Name: hologram-player
+  m_Shader: {fileID: 4800000, guid: fdcca9ca8814f1c4995fe9c11bc9a7d4, type: 3}
+  m_ShaderKeywords: SCANLINES _GLITCH_ON _GLOW_ON _SCAN_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 34f07406286974e4ca236867d8d58b51, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -34,23 +34,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DetailTex:
-        m_Texture: {fileID: 2800000, guid: 2c1c27ec8c3b75a4c80a795adc9ca788, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Flicker:
+        m_Texture: {fileID: 2800000, guid: a0775ddee39477446bcbcedd7ca1bd22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FlickerTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a0775ddee39477446bcbcedd7ca1bd22, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2c1c27ec8c3b75a4c80a795adc9ca788, type: 3}
+        m_Texture: {fileID: 2800000, guid: fee4e59dc6135334fbb06631ebe876d8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseControl:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -62,39 +70,52 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Scanline:
+        m_Texture: {fileID: 2800000, guid: 20a617585b6151b4e8e177fc19a927c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScanlinePattern:
+        m_Texture: {fileID: 2800000, guid: 7b0819c792d27f7448ecc71e55fce6aa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Alpha: 1
-    - _Brightness: 3
+    - _Alpha: 0.35
+    - _Brightness: 1.25
     - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.33
+    - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FlickerSpeed: 1
-    - _Fold: 1
-    - _GlitchIntensity: 0
-    - _GlitchSpeed: 1
+    - _Flicker: 0
+    - _FlickerSpeed: 6.8
+    - _Fold: 63
+    - _Glitch: 0
+    - _GlitchIntensity: 0.35
+    - _GlitchSpeed: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GlowSpeed: 1
-    - _GlowTiling: 0.05
+    - _GlowSpeed: -8.8
+    - _GlowTiling: 0.06
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimPower: 5
-    - _ScanSpeed: 1
-    - _ScanTiling: 0.05
+    - _RimFallness: 0.5
+    - _RimPower: 2.55
+    - _RimStrength: 1
+    - _ScanSpeed: -0.23
+    - _ScanTiling: 30
+    - _Scanline: 0
+    - _ScanlineSpeed: 0.05
+    - _ScanlineTiling: 5.9
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WindQuality: 4
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 0.06518625, g: 0, b: 0.553, a: 1}
+    - _RimColor: {r: 0.009000003, g: 0.056841232, b: 1, a: 1}
+    - _ScanlineColor: {r: 0.0719575, g: 0.9485294, b: 0, a: 1}

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting;
 using UnityEngine;
 using UnityEngine.Networking;
 using NetworkMessages;
@@ -24,7 +25,7 @@ public class Server : NetworkManager {
 
     private void OnPositionUpdate(NetworkMessage msg) {
         var pos = msg.ReadMessage<PositionMessage>();
-        Debug.Log(string.Format("type = {0} | x = {1} | y = {2} | z = {3}", pos.Type, pos.X, pos.Y, pos.Z));
+        //Debug.Log(string.Format("type = {0} | x = {1} | y = {2} | z = {3}", pos.Type, pos.X, pos.Y, pos.Z));
 
         var obj = Instantiate(PlayerLocationIcon) as GameObject;
         obj.transform.parent = Map;
@@ -33,28 +34,29 @@ public class Server : NetworkManager {
             (pos.Y),
             (pos.Z)
         );
-        obj.transform.rotation = new Quaternion(0, 0, 0, 0);
+        //obj.transform.rotation = new Quaternion(0, 0, 0, 0);
+        obj.transform.localRotation = Quaternion.Euler(pos.RotX, pos.RotY, pos.RotZ);
 
-        Renderer renderer = obj.GetComponent<Renderer>();
+        var objRenderer = obj.GetComponent<Renderer>();
         
         switch (pos.Type) {
             case PositionType.Soldier:
-                renderer.material = PlayerIconMaterial;
+                objRenderer.material = PlayerIconMaterial;
                 break;
             case PositionType.Enemy:
-                renderer.material = EnemyIconMaterial;
+                objRenderer.material = EnemyIconMaterial;
                 break;
             case PositionType.Bomb:
-                renderer.material = BombIconMaterial;
+                objRenderer.material = BombIconMaterial;
                 break;
             case PositionType.None:
             default:
-                renderer.material = DefaultMaterial;
+                objRenderer.material = DefaultMaterial;
                 break;
         }
 
         //obj.transform.rotation = Map.rotation;
-        Object.Destroy(obj, 1.0f);
+        Object.Destroy(obj, pos.Type == PositionType.Bomb ? 5.0f : 1.0f);
     }
 
 //	public void SendPosition(PositionType posType, float x, float y, float z){
@@ -62,7 +64,7 @@ public class Server : NetworkManager {
 //		/*
 //		Debug.Log ("Connections: " + Network.connections.Length);
 //
-//		if (Network.connections.Length < 1) {
+//		if (Network.connections.Length < 1) {c
 //			return;
 //		}
 //		*/
