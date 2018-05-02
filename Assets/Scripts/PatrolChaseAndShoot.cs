@@ -2,14 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 [CreateAssetMenu (menuName = "AI/Actions/Chase And Shoot")]
 public class PatrolChaseAndShoot : Action {
 
 	private float shoot;
+	private AudioSource _audio;
 
 
 	public override void Act(StateController controller) {
+		
 		Chase(controller);
 	}
 
@@ -29,6 +32,12 @@ public class PatrolChaseAndShoot : Action {
 				var bullet = Instantiate(controller.BulletPrefab, controller.BulletSpawnPoint.position, new Quaternion(0, 0, 0, 0));
 				bullet.transform.LookAt(hit.transform);
 				var rb = bullet.GetComponent<Rigidbody>();
+
+				var audio = controller.GetComponent<AudioSource>();
+				if (audio != null) {
+					audio.Play();
+				}
+
 				rb.velocity = (hit.transform.position - bullet.transform.position).normalized * 20;
 				shoot = Time.time + 1;
 			}

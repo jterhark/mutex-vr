@@ -22,7 +22,15 @@ public class NetworkSync : MonoBehaviour {
     }
 
     private void Send() {
-        _client.SendPosition(Type, _t.transform.position.x, _t.transform.position.y, _t.transform.position.z);
+        _client.SendPosition(
+            Type,
+            _t.transform.position.x,
+            _t.transform.position.y,
+            _t.transform.position.z,
+            _t.rotation.eulerAngles.x,
+            _t.rotation.eulerAngles.y,
+            _t.rotation.eulerAngles.z
+            );
     }
 
 

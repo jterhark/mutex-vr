@@ -23,7 +23,7 @@ public class Client : NetworkManager {
 //        
 //    }
 
-    public void SendPosition(PositionType posType, float x, float y, float z) {
+    public void SendPosition(PositionType posType, float x, float y, float z, float rotX, float rotY, float rotZ) {
 
         if (this.client == null)
             return;
@@ -32,12 +32,15 @@ public class Client : NetworkManager {
             Type =  posType,
             X = x,
             Y = y,
-            Z = z
+            Z = z,
+            RotX = rotX,
+            RotY = rotY,
+            RotZ = rotZ
         };
         
         //Debug.Log("SENDING");
 
-        
-        this.client.Send(MessageTypes.PositionUpdate, msg);
+        if(this.client!=null && this.client.isConnected)
+            this.client.Send(MessageTypes.PositionUpdate, msg);
     }
 }
